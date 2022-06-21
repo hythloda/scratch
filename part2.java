@@ -1,8 +1,7 @@
 public class NumberUtil {
     public static long sum(List<Integer> numbers){
-	int sum = 0;
-	for( int x : numbers) {
-		sum +=x
-	}
+	int sum = numbers.stream()
+	 			.reduce(0, (a, b) -> a + b);
+	return sum;
     }
 }
