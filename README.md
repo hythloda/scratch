@@ -2,9 +2,9 @@
 
 
 public class Numbers {
-    public static long sum(List<Integers> number){
+    public static long sum(List<Integer> numbers){
         int sum = 0;
-        for( int x : numbers) {
+        for (int x : numbers) {
             sum +=x 
         }
     }
